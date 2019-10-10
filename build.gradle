@@ -1,0 +1,19 @@
+plugins {
+  id 'war'
+  id 'org.akhikhl.gretty' version '2.0.0'
+  id 'idea'
+  id 'eclipse'
+  id "com.github.ben-manes.versions" version '0.26.0'
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  providedCompile 'javax.servlet:javax.servlet-api:4.0.1'
+  testCompile 'junit:junit:4.13-beta-3'
+
+  compile 'org.springframework:spring-webmvc:5.2.0.RELEASE'
+  runtime "jstl:jstl:1.2"
+}
