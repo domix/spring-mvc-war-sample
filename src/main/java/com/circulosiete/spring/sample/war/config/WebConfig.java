@@ -1,4 +1,4 @@
-package com.circulosiete.spring.sample.war;
+package com.circulosiete.spring.sample.war.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import static java.lang.String.format;
+
 @Controller
 public class IndexController {
 
@@ -16,7 +18,8 @@ public class IndexController {
 
   @RequestMapping("/")
   public String showHomePage(Model m) {
-    m.addAttribute("name", randomService.saludo() + ", este es un valor establecido en un controller de Spring MVC");
+    String name = format("%s, este es un valor establecido en un controller de Spring MVC", randomService.saludo());
+    m.addAttribute("name", name);
     return "index";
   }
 }

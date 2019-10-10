@@ -7,7 +7,7 @@ COPY build/libs/spring-mvc-war-sample.war $JBOSS_HOME/standalone/deployments/
 USER root
 
 # Modify owners war
-RUN chown -R jboss:jboss $JBOSS_HOME/standalone/deployments/
+RUN chown -R jboss:jboss $JBOSS_HOME/standalone/deployments/spring-mvc-war-sample.war
 
 # Important, use jboss user to run image
 USER jboss

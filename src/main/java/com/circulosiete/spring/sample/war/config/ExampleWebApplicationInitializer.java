@@ -1,4 +1,4 @@
-package com.circulosiete.spring.sample.war;
+package com.circulosiete.spring.sample.war.config;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;

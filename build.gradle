@@ -15,5 +15,5 @@ dependencies {
   testCompile 'junit:junit:4.13-beta-3'
 
   compile 'org.springframework:spring-webmvc:5.2.0.RELEASE'
-  runtime "jstl:jstl:1.2"
+  //runtime "jstl:jstl:1.2"
 }
